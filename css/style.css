@@ -18,7 +18,7 @@ body {
 /* Hero section background image */
 .hero {
   height: 100vh;
-  background-image: url("../images/home-bg.jpg");
+  background-image: url("../images/ecommerceimages.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -93,3 +93,41 @@ footer .social-icons a {
     width: 100% !important;
   }
 }
+
+
+
+
+#portfolio .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden; /* Ensure content stays within the card */
+  border-radius: 8px; /* Optional: Add rounded corners for a polished look */
+}
+
+#portfolio .card:hover {
+  transform: translateY(-10px); /* Slight upward movement */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+#portfolio .card img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  width: 100%; /* Ensure the image fits within the card */
+  display: block; /* Prevent inline-block spacing issues */
+}
+
+#portfolio .card:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+  filter: brightness(0.8); /* Darken the image on hover */
+}
+
+#portfolio .card .card-body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#portfolio .card:hover .card-body {
+  background-color: #f8f9fa; /* Change card body background */
+  color: #333; /* Update text color */
+}
+
+
+
